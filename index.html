@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Lisa</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0e4d7;
+        }
+        .mona-lisa {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background: #d2b48c;
+            border: 10px solid #8b4513;
+            border-radius: 10px;
+        }
+        .face {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 140px;
+            background: #ffcc99;
+            border-radius: 50%;
+        }
+        .hair {
+            position: absolute;
+            top: 40px;
+            left: 45px;
+            width: 110px;
+            height: 160px;
+            background: #4b2e15;
+            border-radius: 50%;
+        }
+        .eyes {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            width: 60px;
+            height: 20px;
+            margin-left: -30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .eye {
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            position: relative;
+        }
+        .eye::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            width: 6px;
+            height: 6px;
+            background: black;
+            border-radius: 50%;
+        }
+        .smile {
+            position: absolute;
+            top: 130px;
+            left: 50%;
+            width: 40px;
+            height: 20px;
+            margin-left: -20px;
+            border-bottom: 3px solid black;
+            border-radius: 0 0 20px 20px;
+        }
+        .dress {
+            position: absolute;
+            top: 160px;
+            left: 35px;
+            width: 130px;
+            height: 120px;
+            background: #4b2e15;
+            border-radius: 50% 50% 0 0;
+        }
+        .hands {
+            position: absolute;
+            top: 220px;
+            left: 35px;
+            width: 130px;
+            height: 40px;
+            background: #ffcc99;
+            border-radius: 0 0 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="mona-lisa">
+        <div class="hair"></div>
+        <div class="face"></div>
+        <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+        <div class="smile"></div>
+        <div class="dress"></div>
+        <div class="hands"></div>
+    </div>
+</body>
+</html>
